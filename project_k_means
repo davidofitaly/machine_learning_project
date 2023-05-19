@@ -1,7 +1,0 @@
-Algorytm K-mena został zaimplementowany w oparciu o klase kmeans
-
-
-Klasa kmeans(data, k, max_iters=100) przyjmuje 3 argumenty:
-data - dane
-k - ilośc klastrów, zmienne k powinna być większa niż 1, aby umożliwić tworzenie co najmniej dwóch klastrów.
-max_iters = 100 parametr określający maksymalną liczbę iteracji, które algorytm może wykonać. Domyślnie ustawiony jest na 100 iteracji.

@@ -1,0 +1,49 @@
+Opis algorytmu k-means:
+
+1. Importowanie niezbędnych bibliotek:
+   - numpy: biblioteka do operacji na tablicach numerycznych.
+   - plotly.graph_objects: biblioteka do tworzenia interaktywnych wykresów.
+
+2. Definicja funkcji kmeans(data, k, max_iters=10):
+   - Parametry:
+     - data: lista punktów wejściowych.
+     - k: liczba klastrów do znalezienia.
+     - max_iters: maksymalna liczba iteracji (domyślnie ustawiona na 10).
+   - Zwraca:
+     - centroids: lista koordynatów centroidów dla znalezionych klastrów.
+     - clusters: lista klastrów, gdzie każdy klaster zawiera przypisane do niego punkty.
+
+3. Inicjalizacja centroidów:
+   - Wylosowanie k punktów z danych wejściowych jako punkty początkowe centroidów.
+
+4. Pętla iteracji:
+   - Iteracja max_iters razy (domyślnie 10):
+     - Przypisanie punktów do najbliższych centroidów:
+       - Utworzenie pustej listy klastrów dla każdego centroidu.
+       - Dla każdego punktu w danych wejściowych:
+         - Obliczenie odległości od punktu do każdego centroidu.
+         - Wybór indeksu centroidu o najmniejszej odległości.
+         - Dodanie punktu do odpowiadającego mu klastra.
+
+     - Wyświetlanie iteracji na interaktywnym wykresie:
+       - Inicjalizacja obiektu Figure do wykresu.
+       - Dodanie punktów dla każdego klastra na wykres.
+       - Dodanie punktów dla centroidów na wykres.
+       - Ustawienie rozmiaru wykresu, tytułu itp.
+       - Wyświetlenie wykresu.
+
+     - Aktualizacja centroidów:
+       - Obliczenie nowych centroidów na podstawie średniej wartości punktów w klastrze.
+
+     - Sprawdzenie warunku zakończenia algorytmu:
+       - Jeśli centroidy się nie zmieniły, przerwanie pętli.
+
+     - Aktualizacja centroidów dla kolejnej iteracji.
+
+   - Zwrócenie centroidów i klastrów.
+
+5. Przykładowe użycie:
+   - Wygenerowanie losowych danych 40 punktów 2-wymiarowych z zakresem od -5.0 do 5.0.
+   - Określenie liczby klastrów k.
+   - Wywołanie funkcji kmeans z danymi i liczbą klastrów.
+   - Wyświetlenie wyników: centroidów i przypisanych punktów do klastrów.
