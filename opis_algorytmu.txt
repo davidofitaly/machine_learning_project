@@ -43,7 +43,7 @@ Opis algorytmu k-means:
    - Zwrócenie centroidów i klastrów.
 
 5. Przykładowe użycie:
-   - Wygenerowanie losowych danych 40 punktów 2-wymiarowych z zakresem od -5.0 do 5.0.
+   - Wygenerowanie losowych danych 40 punktów z zakresu od -5.0 do 5.0.
    - Określenie liczby klastrów k.
    - Wywołanie funkcji kmeans z danymi i liczbą klastrów.
-   - Wyświetlenie wyników: centroidów i przypisanych punktów do klastrów.
+
